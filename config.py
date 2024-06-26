@@ -6,7 +6,7 @@ BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 class Config:
     """Configuración base utilizada para todas las configuraciones."""
     SECRET_KEY = os.environ.get('SECRET_KEY') or os.urandom(24)
-    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or 'mysql://root@localhost/proyecto27'
+    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or 'mysql://sql10715404:mfqhHCM5sa@sql10.freemysqlhosting.net:3306/sql10715404'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
     # Configuración de horarios de servicios
