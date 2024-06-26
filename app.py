@@ -28,8 +28,3 @@ def create_app(config_name):
         db.create_all()
 
     return app
-
-if __name__ == "__main__":
-    config_name = os.getenv('FLASK_CONFIG') or 'default'
-    app = create_app(config_name)
-    app.run(debug=(config_name == 'dev'))
