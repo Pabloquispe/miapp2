@@ -4,7 +4,7 @@ from config import config_by_name
 from modelos.models import db
 from controladores.admin_routes import admin_bp
 from controladores.user_routes import user_bp
-from controladores.auth_routes import auth_bp  # Asegúrate de que este import esté presente
+from controladores.auth_routes import auth_bp
 from controladores.main_routes import main_bp
 
 def create_app(config_name):
@@ -19,7 +19,7 @@ def create_app(config_name):
     # Registrar Blueprints
     app.register_blueprint(admin_bp)
     app.register_blueprint(user_bp)
-    app.register_blueprint(auth_bp)  # Asegúrate de que este blueprint esté registrado
+    app.register_blueprint(auth_bp)
     app.register_blueprint(main_bp)
     
     with app.app_context():
