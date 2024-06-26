@@ -1,0 +1,220 @@
+mi carro no acelera bien y se aguanta pierde fuerza: Afinamiento de motor
+mi carro consume mucho combustible: Limpieza de inyectores, Cambio de filtro de combustible, Cambio de filtro de aire
+veo abs prendido en el tablero: Diagnóstico con escáner
+tengo problemas al arrancar: Revisión de sensores
+mi motor no responde bien y se aguanta: Afinamiento de motor
+mi motor se aguanta: Afinamiento de motor
+mi auto no tiene fuerza: Afinamiento de motor, Cambio de filtro de aire
+necesito un mantenimiento preventivo: Afinamiento de motor
+veo el aceite sucio: Cambio de aceite
+mi carro tiene bajo nivel de aceite: Cambio de aceite
+el motor esta resumiendo aceite: Cambio de aceite
+pierde aceite por la caja de transmision: Cambio de aceite de transmisión
+siento duro el timon al girar: Cambio de aceite de dirección asistida
+escucho ruidos al girar el timon: Cambio de aceite de dirección asistida
+veo aceite negro por el medidor de aceite: Cambio de aceite
+mi carro ha recorrido mucho y necesita servicio: Afinamiento de motor
+al frenar escucho ruido en la rueda: Revisión de frenos
+los frenos chirrian y hacen ruido: Revisión de frenos
+el pedal de freno esta blando: Revisión de frenos
+el liquido de frenos se pierde muy rapido: Revisión de sistema de frenos hidráulicos
+mis frenos no responden bien: Revisión de frenos, Revisión de sistema de frenos hidráulicos, Revisión de sistema de frenos neumáticos
+la radio no prende: Revisión de fusibles
+el freno no agarra al pisar el pedal: Revisión de frenos
+no puedo frenar bien: Revisión de frenos
+mi freno esta muy largo: Revisión de frenos
+siento olor en la rueda: Revisión de frenos
+las pastillas de freno estan desgastadas: Cambio de pastillas de freno
+escucho ruidos al frenar: Cambio de pastillas de freno, Revisión de frenos
+el freno vibra: Cambio de pastillas de freno, Cambio de discos de freno
+suena cuando piso el freno: Cambio de pastillas de freno
+la rueda suena: Cambio de pastillas de freno
+los discos de freno estan desgastados: Cambio de discos de freno
+mis frenos vibran: Cambio de discos de freno
+los discos de freno estan rayados: Cambio de discos de freno
+las bujias estan desgastadas: Cambio de bujías
+el motor falla al arrancar: Cambio de bujías, Revisión de sistema de encendido, Cambio de cables de bujías
+mi motor no arranca: Cambio de bujías, Revisión de sistema de encendido, Cambio de cables de bujías, Revisión de sistema de encendido electrónico, Cambio de módulo de encendido
+mi motor no enciende: Revisión de sistema de encendido
+mi auto pistonea: Cambio de bujías
+la suspension suena: Revisión de suspensión, Revisión de sistema de suspensión delantera, Revisión de sistema de suspensión trasera
+mi auto se balancea: Revisión de suspensión, Revisión de sistema de suspensión delantera, Revisión de sistema de suspensión trasera
+los amortiguadores estan danados: Revisión de suspensión
+suena al pasar un bache: Revisión de suspensión
+mi carro vibra al andar por la trocha: Revisión de suspensión
+los amortiguadores estan desgastados: Cambio de amortiguadores
+la suspension esta dura: Cambio de amortiguadores
+tengo problemas al cambiar de marcha: Revisión de transmisión
+acelera pero no corre: Revisión de sistema de transmisión automática
+al acelerar no tiene velocidad: Revisión de sistema de transmisión automática
+siento ruidos en la transmision: Revisión de transmisión
+hay fuga de aceite en la transmision: Revisión de transmisión, Revisión de sistema de transmisión automática
+gotea aceite de la caja de transmision: Cambio de aceite de transmisión
+tengo problemas de cambio de marcha: Cambio de aceite de transmisión
+la caja suena: Cambio de aceite de transmisión
+el motor se sobrecalienta: Revisión de sistema de enfriamiento, Revisión de sistema de enfriamiento del motor
+veo fuga de refrigerante: Revisión de sistema de enfriamiento, Revisión de sistema de enfriamiento del motor
+el motor se calienta rapido: Revisión de sistema de enfriamiento
+el liquido refrigerante esta sucio: Cambio de líquido refrigerante
+el nivel de refrigerante esta bajo: Cambio de líquido refrigerante
+el refrigerante esta negro y sucio: Cambio de líquido refrigerante
+la direccion esta dura: Revisión de dirección asistida
+escucho ruidos al girar: Revisión de dirección asistida, Revisión de sistema de dirección hidráulica, Revisión de sistema de dirección eléctrica
+hay fuga de liquido de direccion: Revisión de dirección asistida, Revisión de sistema de dirección hidráulica
+el aceite de direccion esta sucio: Cambio de aceite de dirección asistida
+el escape esta ruidoso: Revisión de sistema de escape, Revisión de sistema de escape trasero
+hay fuga en el sistema de escape: Revisión de sistema de escape, Revisión de sistema de escape trasero
+siento olor a gases de escape: Revisión de sistema de escape, Revisión de sistema de escape trasero
+el silenciador esta danado: Cambio de silenciador
+las luces intermitentes no prenden: Revisión de sistema eléctrico
+el sistema electrico no funciona bien: Revisión de sistema eléctrico
+la bateria se descarga muy rapido: Cambio de batería
+la bateria no retiene carga: Cambio de batería
+tengo problemas al arrancar: Cambio de batería, Revisión de sistema de encendido, Revisión de sistema de encendido electrónico, Cambio de módulo de encendido
+las luces no funcionan: Revisión de sistema de iluminación, Revisión de sistema de iluminación trasera
+los faros estan opacos: Revisión de sistema de iluminación
+quiero revisar las luces: Revisión de sistema de iluminación
+algunos focos no prenden: Revisión de sistema de iluminación
+no tengo luces: Revisión de sistema de iluminación
+los faros estan desgastados: Cambio de faros
+las luces bajas no prenden: Cambio de faros
+se ha roto un faro: Cambio de faros
+el aire acondicionado no enfria: Revisión de sistema de climatización, Revisión de sistema de climatización trasera, Revisión de sistema de aire acondicionado
+la calefaccion no funciona: Revisión de sistema de climatización, Revisión de sistema de climatización trasera
+hay ruidos en el sistema de climatizacion: Revisión de sistema de climatización, Revisión de sistema de climatización trasera
+el aire acondicionado no tiene gas: Recarga de aire acondicionado
+el aire no enfria: Recarga de aire acondicionado
+necesito recargar gas preventivo: Recarga de aire acondicionado
+no sale aire frio: Recarga de aire acondicionado
+el aire acondicionado no funciona: Recarga de aire acondicionado
+el carro consume mucho combustible: Revisión de sistema de combustible, Revisión de sistema de inyección, Cambio de filtro de combustible, Cambio de filtro de aire
+siento olor a gasolina: Revisión de sistema de combustible, Limpieza de inyectores
+hay fuga de gasolina: Revisión de sistema de combustible
+siento olores a gasolina: Revisión de sistema de combustible
+el motor no enciende: Revisión de sistema de combustible, Revisión de sistema de encendido
+mi auto no arranca: Revisión de sistema de combustible, Revisión de sistema de encendido, Revisión de sistema de arranque, Revisión de sistema de encendido electrónico
+el filtro esta obstruido: Cambio de filtro de combustible, Cambio de filtro de aire
+tengo problemas de arranque: Cambio de filtro de combustible, Revisión de sistema de encendido, Revisión de sistema de arranque, Revisión de sistema de encendido electrónico
+el motor pierde potencia: Revisión de sistema de admisión, Cambio de filtro de aire, Revisión de sistema de inyección, Limpieza de inyectores
+el motor se ahoga: Revisión de sistema de admisión
+tengo problemas de aceleracion: Revisión de sistema de admisión
+escucho ruidos en la admision: Revisión de sistema de admisión
+el filtro esta sucio: Cambio de filtro de aire, Cambio de filtro de cabina
+tengo problemas de rendimiento: Cambio de filtro de aire
+mi auto no tiene fuerza: Cambio de filtro de aire
+el carro perdio fuerza: Cambio de filtro de aire
+los inyectores estan sucios: Limpieza de inyectores
+siento olor a gasolina al arrancar: Limpieza de inyectores
+hay fallos en el motor: Revisión de sistema de encendido, Cambio de cables de bujías, Revisión de sistema de encendido electrónico, Cambio de módulo de encendido
+el auto demora en arrancar: Revisión de sistema de encendido
+los cables estan desgastados: Cambio de cables de bujías
+siento golpes al pisar el freno: Revisión de sistema de frenos ABS
+el auto pierde traccion: Revisión de sistema de tracción, Revisión de sistema de diferencial
+no cambia a 4x4: Revisión de sistema de tracción, Revisión de sistema de control de estabilidad, Revisión de sistema de control de emisiones
+hay ruidos al cambiar a 4x4: Revisión de sistema de tracción, Revisión de sistema de control de estabilidad
+el diferencial esta ruidoso: Revisión de sistema de diferencial
+el aceite de diferencial esta sucio: Cambio de aceite de diferencial
+el nivel de aceite de diferencial esta bajo: Cambio de aceite de diferencial
+la suspension trasera suena: Revisión de sistema de suspensión trasera
+los amortiguadores traseros estan danados: Revisión de sistema de suspensión trasera
+los muelles estan desgastados: Cambio de muelles de suspensión
+mi auto esta bajo: Cambio de muelles de suspensión
+la suspension esta blanda: Cambio de muelles de suspensión
+la transmision resbala: Revisión de sistema de transmisión automática
+el filtro de transmision esta obstruido: Cambio de filtro de transmisión automática
+el freno de mano esta flojo: Revisión de sistema de frenos de mano
+el escape trasero esta ruidoso: Revisión de sistema de escape trasero
+hay fuga en el sistema de escape trasero: Revisión de sistema de escape trasero
+el tubo de escape esta danado: Cambio de tubo de escape
+el motor se calienta: Cambio de termostato
+el termostato no funciona: Cambio de termostato
+las llantas se desgastan irregularmente: Alineación y balanceo
+el vehiculo se desvía: Alineación y balanceo
+hay vibracion en el volante: Alineación y balanceo
+la bateria o el alternador no cargan: Revisión de sistema de carga, Revisión de alternador
+tengo problemas electricos: Revisión de sistema de carga, Revisión de alternador
+el alternador no carga: Revisión de alternador
+hay ruidos al arrancar: Revisión de sistema de arranque, Cambio de motor de arranque
+mi motor no enciende: Revisión de sistema de arranque, Cambio de motor de arranque
+el arrancador gira lento: Revisión de sistema de arranque
+la suspension delantera suena: Revisión de sistema de suspensión delantera
+los amortiguadores delanteros estan danados: Revisión de sistema de suspensión delantera
+las rotulas estan desgastadas: Cambio de rótulas
+hay ruidos en la suspension: Cambio de rótulas
+el aire no circula: Revisión de sistema de ventilación
+el ventilador no funciona: Revisión de sistema de ventilación
+el aire no circula bien: Cambio de filtro de cabina
+hay malos olores: Cambio de filtro de cabina
+hay luces de advertencia de emisiones: Revisión de sistema de control de emisiones
+tengo problemas de emisiones: Revisión de sistema de control de emisiones
+el sensor esta defectuoso: Cambio de sensor de oxígeno
+las luces traseras no funcionan: Revisión de sistema de iluminación trasera
+los faros traseros estan opacos: Revisión de sistema de iluminación trasera
+las luces intermitentes traseras no prenden: Revisión de sistema de iluminación trasera
+las luces traseras no prenden: Cambio de focos de luces traseras
+las luces bajas no prenden: Cambio de focos de luces delanteras
+no hay chispa en la bobina: Revisión de sistema de encendido electrónico
+el modulo de encendido esta defectuoso: Cambio de módulo de encendido
+los frenos hidraulicos estan flojos: Revisión de sistema de frenos hidráulicos
+los frenos hidraulicos no funcionan: Revisión de sistema de frenos hidráulicos
+los frenos neumaticos estan flojos: Revisión de sistema de frenos neumáticos
+los frenos neumaticos no funcionan: Revisión de sistema de frenos neumáticos
+el cilindro maestro esta danado: Cambio de cilindro maestro de frenos
+la direccion hidraulica esta dura: Revisión de sistema de dirección hidráulica
+la direccion electrica esta dura: Revisión de sistema de dirección eléctrica
+hay problemas electricos en la direccion: Revisión de sistema de dirección eléctrica
+el motor de direccion esta danado: Cambio de motor de dirección eléctrica
+hay perdida de estabilidad: Revisión de sistema de control de estabilidad
+los frenos no funcionan bien: Revisión de sistema de frenos regenerativos
+hay perdida de energia: Revisión de sistema de recuperación de energía
+el modulo de control de frenos esta defectuoso: Cambio de módulo de control de frenos
+hay fuga en el sistema de escape: Revisión de sistema de escape deportivo
+quiero mejorar el sonido del escape: Instalación de sistema de escape deportivo
+los altavoces no funcionan: Revisión de sistema de sonido
+tengo problemas con el gps: Revisión de sistema de navegación
+la navegacion no funciona: Revisión de sistema de navegación
+tengo problemas con el bluetooth: Revisión de sistema de comunicación
+hay problemas con la alarma: Revisión de sistema de seguridad
+tengo problemas con la pantalla: Revisión de sistema de entretenimiento
+la camara de reversa no funciona: Revisión de sistema de cámara de reversa
+tengo problemas con los sensores: Revisión de sistema de sensores de estacionamiento
+los asientos no calientan: Revisión de sistema de climatización de asientos
+la suspension no funciona: Revisión de sistema de suspensión neumática
+tengo problemas de frenado: Revisión de sistema de frenos hidráulicos, Revisión de sistema de frenos neumáticos
+tengo problemas de encendido: Revisión de sistema de encendido, Revisión de sistema de encendido electrónico
+quiero mejorar la calidad de sonido: Instalación de sistema de sonido
+necesito una actualizacion de mapas: Instalación de sistema de navegación
+quiero configurar el sistema de navegacion: Instalación de sistema de navegación
+quiero instalar bluetooth: Instalación de sistema de comunicación
+tengo problemas de bloqueo: Revisión de sistema de seguridad
+quiero mejorar la conectividad: Instalación de sistema de entretenimiento
+quiero mejorar la visibilidad: Instalación de cámara de reversa
+quiero configurar los sensores: Instalación de sensores de estacionamiento
+quiero instalar calefaccion en los asientos: Instalación de sistema de climatización de asientos
+quiero mejorar el sistema de suspension: Instalación de suspensión neumática
+quiero instalar un escape deportivo: Instalación de sistema de escape deportivo
+las luces led parpadean: Instalación de iluminación LED
+necesito limpiar los inyectores: Limpieza de sistema de inyección directa
+hay una luz amarilla en el tablero: Diagnóstico con escáner
+la luz de check engine esta encendida: Diagnóstico con escáner
+hay un codigo de error del motor: Diagnóstico con escáner
+hay un codigo de error de transmision: Diagnóstico con escáner
+tengo problemas de arranque: Diagnóstico con escáner, Revisión de sistema de encendido
+el motor pierde potencia: Diagnóstico con escáner, Limpieza de inyectores
+el carro consume mucho combustible: Diagnóstico con escáner
+el carro pierde fuerza: Limpieza de inyectores
+hay fallos de emisiones: Diagnóstico con escáner
+mi motor no enciende: Diagnóstico con escáner
+mi auto no arranca: Diagnóstico con escáner
+hay desconexion de sensor: Diagnóstico con escáner
+el sensor de oxigeno esta defectuoso: Diagnóstico con escáner
+el sensor de velocidad esta defectuoso: Revisión de sensores
+el sensor de presion de aceite esta defectuoso: Revisión de sensores
+el sensor de temperatura del motor esta defectuoso: Revisión de sensores
+el sensor de flujo de aire masivo esta defectuoso: Revisión de sensores
+el sensor de posicion del cigueñal esta defectuoso: Revisión de sensores
+el sensor de detonacion esta defectuoso: Revisión de sensores
+el sensor de posicion del acelerador esta defectuoso: Revisión de sensores
+el sensor de presion de combustible esta defectuoso: Revisión de sensores
+el sensor de temperatura del aire de admision esta defectuoso: Revisión de sensores
+el sensor de nivel de combustible esta defectuoso: Revisión de sensores
