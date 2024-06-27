@@ -13,7 +13,7 @@ class Usuario(db.Model):
     ciudad = db.Column(db.String(100))
     profesion = db.Column(db.String(100))
     pais = db.Column(db.String(100))
-    fecha_registro = db.Column(db.DateTime, default=db.func.current_timestamp())
+    fecha_registro = db.Column(db.DateTime)
     fecha_nacimiento = db.Column(db.Date)
     genero = db.Column(db.Enum('M', 'F', 'Otro'))
     preferencias_servicio = db.Column(db.JSON)
