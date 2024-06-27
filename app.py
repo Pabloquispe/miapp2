@@ -1,3 +1,4 @@
+import os
 from flask import Flask
 from flask_migrate import Migrate
 from config import config_by_name
@@ -23,8 +24,6 @@ def create_app(config_name):
     app.register_blueprint(main_bp)
 
     with app.app_context():
-        from controladores.routes import register_routes
-        register_routes(app)
         db.create_all()
 
     return app
