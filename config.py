@@ -1,28 +1,35 @@
 import os
 
+# Directorio base de la aplicación
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 
 class Config:
+    """Configuración base utilizada para todas las configuraciones."""
     SECRET_KEY = os.environ.get('SECRET_KEY') or os.urandom(24)
-    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or 'mysql://sql10715404:mfqhHCM5sa@sql10.freemysqlhosting.net:3306/sql10715404'
+    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://camaralurin22_pablo:Pablo123456#@localhost/camaralurin22_proyecto25'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
+    # Configuración de horarios de servicios
     HORARIO_INICIO_MANANA = '09:00'
     HORARIO_FIN_MANANA = '12:00'
     HORARIO_INICIO_TARDE = '13:00'
     HORARIO_FIN_TARDE = '18:00'
 
 class DevelopmentConfig(Config):
+    """Configuración utilizada durante el desarrollo."""
     DEBUG = True
 
 class TestingConfig(Config):
+    """Configuración utilizada durante las pruebas."""
     TESTING = True
     SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(BASE_DIR, 'test.db')
     DEBUG = True
 
 class ProductionConfig(Config):
+    """Configuración utilizada en producción."""
     DEBUG = False
 
+# Diccionario para facilitar el acceso a las configuraciones
 config_by_name = {
     'dev': DevelopmentConfig,
     'test': TestingConfig,
