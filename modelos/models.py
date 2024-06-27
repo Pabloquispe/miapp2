@@ -4,10 +4,7 @@ from datetime import datetime
 
 db = SQLAlchemy()
 
-
-
 class Usuario(db.Model):
-  
     idPrimaria = db.Column(db.Integer, primary_key=True, autoincrement=True)
     nombre = db.Column(db.String(100), nullable=False)
     apellido = db.Column(db.String(100), nullable=False)
@@ -24,8 +21,8 @@ class Usuario(db.Model):
     activo = db.Column(db.Boolean, default=True)
     estado = db.Column(db.String(50), default='inicio')
     password_hash = db.Column(db.String(128))
-    fecha_registro = db.Column(db.TIMESTAMP, default=datetime.utcnow)
-    fecha_actualizacion = db.Column(db.TIMESTAMP, default=datetime.utcnow, onupdate=datetime.utcnow)
+    fecha_registro = db.Column(db.TIMESTAMP, default=db.func.current_timestamp())
+    fecha_actualizacion = db.Column(db.TIMESTAMP, default=db.func.current_timestamp(), onupdate=db.func.current_timestamp())
 
     def set_password(self, password):
         self.password_hash = generate_password_hash(password, method='pbkdf2:sha256')
