@@ -1,6 +1,7 @@
 import os
-from flask import Flask
+from flask import Flask, render_template, request, redirect, url_for, jsonify
 from flask_migrate import Migrate
+from sqlalchemy.exc import OperationalError
 from config import config_by_name
 from modelos.models import db
 from controladores.admin_routes import admin_bp
@@ -32,4 +33,5 @@ if __name__ == "__main__":
     config_name = os.getenv('FLASK_CONFIG') or 'default'
     app = create_app(config_name)
     app.run(debug=(config_name == 'dev'))
+
 
