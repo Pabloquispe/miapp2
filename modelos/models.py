@@ -3,11 +3,12 @@ from werkzeug.security import generate_password_hash, check_password_hash
 
 db = SQLAlchemy()
 
+
 class Usuario(db.Model):
     idPrimaria = db.Column(db.Integer, primary_key=True, autoincrement=True)
     nombre = db.Column(db.String(100), nullable=False)
     apellido = db.Column(db.String(100), nullable=False)
-    email = db.Column(db.String(100), nullable=False)
+    email = db.Column(db.String(100), nullable=False, unique=True)
     telefono = db.Column(db.String(15), nullable=False)
     direccion = db.Column(db.String(255))
     ciudad = db.Column(db.String(100))
@@ -31,7 +32,6 @@ class Usuario(db.Model):
     
     def __repr__(self):
         return f'<Usuario {self.nombre} {self.apellido}>'
-
 class Vehiculo(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     usuario_id = db.Column(db.Integer, db.ForeignKey('usuario.id'), nullable=False)
