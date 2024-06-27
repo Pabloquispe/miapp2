@@ -1,4 +1,5 @@
 import os
+import os
 
 # Directorio base de la aplicación
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
@@ -36,3 +37,4 @@ config_by_name = {
     'prod': ProductionConfig,
     'default': DevelopmentConfig
 }
+
