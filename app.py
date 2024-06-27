@@ -1,7 +1,5 @@
-import os
-from flask import Flask, render_template, request, redirect, url_for, jsonify
+from flask import Flask
 from flask_migrate import Migrate
-from sqlalchemy.exc import OperationalError
 from config import config_by_name
 from modelos.models import db
 from controladores.admin_routes import admin_bp
@@ -25,6 +23,8 @@ def create_app(config_name):
     app.register_blueprint(main_bp)
 
     with app.app_context():
+        from controladores.routes import register_routes
+        register_routes(app)
         db.create_all()
 
     return app
