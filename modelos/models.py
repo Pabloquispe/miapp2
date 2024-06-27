@@ -3,27 +3,26 @@ from werkzeug.security import generate_password_hash, check_password_hash
 
 db = SQLAlchemy()
 
-
 class Usuario(db.Model):
-    idPrimaria = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    idPrimaria = db.Column(db.Integer, primary_key=True)
     nombre = db.Column(db.String(100), nullable=False)
     apellido = db.Column(db.String(100), nullable=False)
-    email = db.Column(db.String(100), nullable=False, unique=True)
-    telefono = db.Column(db.String(15), nullable=False)
-    direccion = db.Column(db.String(255))
+    email = db.Column(db.String(100), unique=True, nullable=False)
+    telefono = db.Column(db.String(20))
+    direccion = db.Column(db.String(200))
     ciudad = db.Column(db.String(100))
     profesion = db.Column(db.String(100))
     pais = db.Column(db.String(100))
     fecha_nacimiento = db.Column(db.Date)
-    genero = db.Column(db.Enum('M', 'F', 'Otro'))
-    preferencias_servicio = db.Column(db.Text)
-    rol = db.Column(db.Enum('usuario', 'administrador'), default='usuario')
+    genero = db.Column(db.String(10))
+    preferencias_servicio = db.Column(db.String(200))
+    rol = db.Column(db.String(50))
     activo = db.Column(db.Boolean, default=True)
-    estado = db.Column(db.String(50), default='inicio')
+    estado = db.Column(db.String(50))
     password_hash = db.Column(db.String(128))
-    fecha_registro = db.Column(db.TIMESTAMP, default=db.func.current_timestamp())
-    fecha_actualizacion = db.Column(db.TIMESTAMP, default=db.func.current_timestamp(), onupdate=db.func.current_timestamp())
-
+    fecha_registro = db.Column(db.DateTime, default=datetime.utcnow)
+    fecha_actualizacion = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+    
     def set_password(self, password):
         self.password_hash = generate_password_hash(password, method='pbkdf2:sha256')
 
