@@ -7,25 +7,25 @@ db = SQLAlchemy()
 
 
 class Usuario(db.Model):
-   id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+  
+    idPrimaria = db.Column(db.Integer, primary_key=True, autoincrement=True)
     nombre = db.Column(db.String(100), nullable=False)
     apellido = db.Column(db.String(100), nullable=False)
-    email = db.Column(db.String(100), unique=True, nullable=False)
+    email = db.Column(db.String(100), nullable=False)
     telefono = db.Column(db.String(15), nullable=False)
-    direccion = db.Column(db.String(255), nullable=True)
-    ciudad = db.Column(db.String(100), nullable=True)
-    profesion = db.Column(db.String(100), nullable=True)
-    pais = db.Column(db.String(100), nullable=True)
-    fecha_nacimiento = db.Column(db.Date, nullable=True)
-    genero = db.Column(db.Enum('M', 'F', 'Otro'), nullable=True)
-    preferencias_servicio = db.Column(db.Text, nullable=True)
-    rol = db.Column(db.Enum('usuario', 'administrador'), default='usuario', nullable=True)
-    activo = db.Column(db.Boolean, default=True, nullable=True)
-    estado = db.Column(db.String(50), default='inicio', nullable=True)
-    password_hash = db.Column(db.String(128), nullable=True)
-    
-    fecha_actualizacion = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow, nullable=True)
-
+    direccion = db.Column(db.String(255))
+    ciudad = db.Column(db.String(100))
+    profesion = db.Column(db.String(100))
+    pais = db.Column(db.String(100))
+    fecha_nacimiento = db.Column(db.Date)
+    genero = db.Column(db.Enum('M', 'F', 'Otro'))
+    preferencias_servicio = db.Column(db.Text)
+    rol = db.Column(db.Enum('usuario', 'administrador'), default='usuario')
+    activo = db.Column(db.Boolean, default=True)
+    estado = db.Column(db.String(50), default='inicio')
+    password_hash = db.Column(db.String(128))
+    fecha_registro = db.Column(db.TIMESTAMP, default=datetime.utcnow)
+    fecha_actualizacion = db.Column(db.TIMESTAMP, default=datetime.utcnow, onupdate=datetime.utcnow)
 
     def set_password(self, password):
         self.password_hash = generate_password_hash(password, method='pbkdf2:sha256')
