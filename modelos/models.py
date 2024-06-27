@@ -23,7 +23,7 @@ class Usuario(db.Model):
     activo = db.Column(db.Boolean, default=True, nullable=True)
     estado = db.Column(db.String(50), default='inicio', nullable=True)
     password_hash = db.Column(db.String(128), nullable=True)
-    fecha_registro = db.Column(db.DateTime, default=datetime.utcnow, nullable=False)
+    
     fecha_actualizacion = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow, nullable=True)
 
 
