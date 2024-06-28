@@ -1,11 +1,15 @@
+import os
 from flask import Flask
 from flask_migrate import Migrate
+from flask_sqlalchemy import SQLAlchemy
 from config import config_by_name
-from modelos.models import db
 from controladores.admin_routes import admin_bp
 from controladores.user_routes import user_bp
 from controladores.auth_routes import auth_bp
 from controladores.main_routes import main_bp
+
+# Inicializa la base de datos
+db = SQLAlchemy()
 
 def create_app(config_name):
     """Crea y configura la aplicación Flask."""
@@ -32,7 +36,7 @@ def create_app(config_name):
 if __name__ == "__main__":
     config_name = os.getenv('FLASK_CONFIG') or 'default'
     app = create_app(config_name)
-    app.run(debug=(config_name == 'dev'))
-
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port, debug=(config_name == 'dev'))
 
 
