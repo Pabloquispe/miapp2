@@ -3,10 +3,10 @@ import os
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 
 class Config:
-    SECRET_KEY = os.environ.get('SECRET_KEY', os.urandom(24))
+    SECRET_KEY = os.environ.get('SECRET_KEY') or os.urandom(24)
+    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or 'mysql://sql10715404:mfqhHCM5sa@sql10.freemysqlhosting.net:3306/sql10715404'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
-    
-    # Horarios configurables para el sistema
+
     HORARIO_INICIO_MANANA = '09:00'
     HORARIO_FIN_MANANA = '12:00'
     HORARIO_INICIO_TARDE = '13:00'
@@ -14,16 +14,14 @@ class Config:
 
 class DevelopmentConfig(Config):
     DEBUG = True
-    SQLALCHEMY_DATABASE_URI = os.environ.get('DEV_DATABASE_URL', 'sqlite:///' + os.path.join(BASE_DIR, 'dev.db'))
 
 class TestingConfig(Config):
     TESTING = True
-    DEBUG = True
     SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(BASE_DIR, 'test.db')
+    DEBUG = True
 
 class ProductionConfig(Config):
     DEBUG = False
-    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
 
 config_by_name = {
     'dev': DevelopmentConfig,
@@ -31,3 +29,4 @@ config_by_name = {
     'prod': ProductionConfig,
     'default': DevelopmentConfig
 }
+
