@@ -30,7 +30,7 @@ openpyxl==3.1.3
 pandas==2.2.2
 pillow==10.3.0
 pydantic==2.7.2
-pydantic_core==2.18.3
+pydantic-core==2.18.3
 PyMySQL==1.1.1
 python-dateutil==2.9.0.post0
 pytz==2024.1
@@ -43,8 +43,9 @@ sniffio==1.3.1
 SQLAlchemy==2.0.30
 threadpoolctl==3.5.0
 tqdm==4.66.4
-typing_extensions==4.12.0
+typing-extensions==4.12.0
 tzdata==2024.1
 urllib3==2.2.1
 Werkzeug==3.0.3
 XlsxWriter==3.2.0
+
