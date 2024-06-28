@@ -32,6 +32,7 @@ class Usuario(db.Model):
     
     def __repr__(self):
         return f'<Usuario {self.nombre} {self.apellido}>'
+
 class Vehiculo(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     usuario_id = db.Column(db.Integer, db.ForeignKey('usuario.id'), nullable=False)
