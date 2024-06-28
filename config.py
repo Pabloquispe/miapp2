@@ -13,7 +13,8 @@ class Config:
 
 class DevelopmentConfig(Config):
     DEBUG = True
-    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or 'mysql+pymysql://camaralurin22_pablo:Pablo123456%23@localhost/camaralurin22_proyecto26'
+SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or \
+    'mysql+pymysql://camaralurin22_pablo:Pablo123456%23@localhost/camaralurin22_proyecto26'
 
 class TestingConfig(Config):
     TESTING = True
