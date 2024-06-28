@@ -5,16 +5,15 @@ from datetime import datetime
 db = SQLAlchemy()
 
 class Usuario(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
+    idPrimaria = db.Column(db.Integer, primary_key=True, autoincrement=True)
     nombre = db.Column(db.String(100), nullable=False)
     apellido = db.Column(db.String(100), nullable=False)
-    email = db.Column(db.String(100), unique=True, nullable=False)
+    email = db.Column(db.String(100), nullable=False)
     telefono = db.Column(db.String(15), nullable=False)
     direccion = db.Column(db.String(255))
     ciudad = db.Column(db.String(100))
     profesion = db.Column(db.String(100))
     pais = db.Column(db.String(100))
-    fecha_registro = db.Column(db.DateTime, default=datetime.utcnow)
     fecha_nacimiento = db.Column(db.Date)
     genero = db.Column(db.Enum('M', 'F', 'Otro'))
     preferencias_servicio = db.Column(db.Text)
@@ -22,7 +21,7 @@ class Usuario(db.Model):
     activo = db.Column(db.Boolean, default=True)
     estado = db.Column(db.String(50), default='inicio')
     password_hash = db.Column(db.String(128))
-    fecha_creacion = db.Column(db.DateTime, default=datetime.utcnow)
+    fecha_registro = db.Column(db.DateTime, default=datetime.utcnow)
     fecha_actualizacion = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
     
     def set_password(self, password):
