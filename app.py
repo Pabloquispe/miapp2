@@ -9,7 +9,6 @@ from controladores.user_routes import user_bp
 from controladores.auth_routes import auth_bp
 from controladores.main_routes import main_bp
 
-# Inicializa la base de datos
 db = SQLAlchemy()
 
 def create_app(config_name):
@@ -17,11 +16,9 @@ def create_app(config_name):
     app = Flask(__name__, template_folder='vistas/templates', static_folder='vistas/static')
     app.config.from_object(config_by_name[config_name])
 
-    # Inicializar la base de datos
     db.init_app(app)
     migrate = Migrate(app, db)
 
-    # Registra los blueprints
     app.register_blueprint(admin_bp)
     app.register_blueprint(user_bp)
     app.register_blueprint(auth_bp)
@@ -29,8 +26,8 @@ def create_app(config_name):
 
     return app
 
-# Punto de entrada para ejecutar la aplicación
+app = create_app(os.getenv('FLASK_CONFIG') or 'default')
+
 if __name__ == "__main__":
-    config_name = os.getenv('FLASK_CONFIG') or 'default'
-    app = create_app(config_name)
-    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)), debug=(config_name == 'dev'))
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)), debug=(app.config['DEBUG']))
+
